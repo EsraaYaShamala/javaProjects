@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="estore.controller.SigninController">
+   <children>
+      <Pane layoutX="168.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #874356;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Polyline fill="#f6e7d8" layoutX="139.0" layoutY="168.0" points="461.0, -168.0, 461.0, -108.0, -43.79998779296875, -7.1999969482421875, -139.0, -168.0" strokeType="INSIDE" />
+            <Label contentDisplay="CENTER" layoutX="236.0" layoutY="38.0" style="-fx-padding: 0;" text="EStore" textFill="#874356">
+               <font>
+                  <Font name="Segoe UI Bold" size="36.0" />
+               </font>
+            </Label>
+            <VBox layoutX="162.0" layoutY="161.0" prefHeight="419.0" prefWidth="379.0" style="-fx-border-style: dashed; -fx-border-color: #F6E7D8;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="77.0" prefWidth="346.0" spacing="8.0" style="-fx-border-style: dashed; -fx-border-color: #F6E7D8;">
+                     <children>
+                        <Label text="Name" textFill="#f6e7d8">
+                           <font>
+                              <Font name="Segoe UI" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="18.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="txtName" prefHeight="36.0" prefWidth="191.0" promptText="userName">
+                           <HBox.margin>
+                              <Insets left="66.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="27.0" layoutY="27.0" prefHeight="77.0" prefWidth="346.0" spacing="8.0" style="-fx-border-style: dashed; -fx-border-color: #F6E7D8;">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="86.0" text="Classification" textFill="#f6e7d8">
+                           <font>
+                              <Font name="Segoe UI" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="18.0" />
+                           </padding>
+                        </Label>
+                        <RadioButton fx:id="admain" mnemonicParsing="false" text="Admain" textFill="#f6e7d8">
+                           <padding>
+                              <Insets left="2.0" top="12.0" />
+                           </padding>
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="classification" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="normal" layoutX="121.0" layoutY="27.0" mnemonicParsing="false" text="NormalUser" textFill="#f6e7d8" toggleGroup="$classification">
+                           <padding>
+                              <Insets left="2.0" top="12.0" />
+                           </padding>
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="27.0" layoutY="104.0" prefHeight="77.0" prefWidth="210.0" spacing="8.0" style="-fx-border-style: dashed; -fx-border-color: #F6E7D8;">
+                     <children>
+                        <Label text="NewPassword" textFill="#f6e7d8">
+                           <font>
+                              <Font name="Segoe UI" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="18.0" />
+                           </padding>
+                        </Label>
+                        <PasswordField fx:id="newPass" prefHeight="36.0" prefWidth="172.0" promptText="newPassword">
+                           <HBox.margin>
+                              <Insets left="36.0" top="8.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Segoe UI" size="14.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="27.0" layoutY="198.0" prefHeight="77.0" prefWidth="210.0" spacing="8.0" style="-fx-border-style: dashed; -fx-border-color: #F6E7D8;">
+                     <children>
+                        <Label text="confirmPassword" textFill="#f6e7d8">
+                           <font>
+                              <Font name="Segoe UI" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="18.0" />
+                           </padding>
+                        </Label>
+                        <PasswordField fx:id="confPass" prefHeight="36.0" prefWidth="162.0" promptText="confirmPassword">
+                           <HBox.margin>
+                              <Insets left="36.0" top="8.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Segoe UI" size="14.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="27.0" layoutY="284.0" prefHeight="77.0" prefWidth="210.0" spacing="8.0" style="-fx-border-style: dashed; -fx-border-color: #F6E7D8;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="16.0" left="70.0" right="16.0" top="16.0" />
+                     </padding>
+                     <children>
+                        <Button fx:id="btnSignup" mnemonicParsing="false" style="-fx-border-color: #F6E7D8; -fx-border-style: dashed; -fx-background-color: #C65D7B;" text="SignUp" textFill="#f6e7d8">
+                           <font>
+                              <Font name="Segoe UI" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnNew" layoutX="27.0" layoutY="27.0" mnemonicParsing="false" prefWidth="66.4" style="-fx-border-color: #F6E7D8; -fx-border-style: dashed; -fx-background-color: #C65D7B;" text="New" textFill="#f6e7d8">
+                           <font>
+                              <Font name="Segoe UI" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnExit" layoutX="101.0" layoutY="27.0" mnemonicParsing="false" prefWidth="66.4" style="-fx-border-color: #F6E7D8; -fx-border-style: dashed; -fx-background-color: #C65D7B;" text="Exit" textFill="#f6e7d8">
+                           <font>
+                              <Font name="Segoe UI" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

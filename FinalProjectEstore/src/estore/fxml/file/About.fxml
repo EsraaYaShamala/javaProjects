@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="estore.controller.AboutController">
+   <children>
+      <Pane prefHeight="66.0" prefWidth="600.0" style="-fx-background-color: #C65D7B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblWelcome" alignment="CENTER" layoutX="286.0" layoutY="25.0" text="Label" textFill="#f6e7d8">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextArea fx:id="txtArea" layoutX="11.0" layoutY="66.0" prefHeight="900.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="66.0" />
+      <ButtonBar layoutX="57.0" layoutY="334.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="50.0" prefWidth="500.0" style="-fx-background-color: #F6E7D8; -fx-border-color: #F68989;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <buttons>
+          <Button fx:id="btnExit" mnemonicParsing="false" style="-fx-background-color: #874356;" text="Exit" textFill="#f6e7d8">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Button>
+        </buttons>
+         <padding>
+            <Insets bottom="32.0" left="32.0" right="32.0" top="32.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ButtonBar>
+      <Separator layoutY="65.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

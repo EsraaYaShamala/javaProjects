@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: #F6E7D8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="estore.controller.signController">
+   <children>
+      <Pane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #F68989;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="16.0" prefHeight="29.0" prefWidth="212.0" text=" Login Screen" textAlignment="CENTER" textFill="#874356">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Separator layoutX="1.0" layoutY="60.0" prefHeight="3.0" prefWidth="500.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="60.0" />
+      <ImageView fx:id="userLogin" fitHeight="53.0" fitWidth="64.0" layoutX="219.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="217.0" AnchorPane.topAnchor="73.0">
+         <image>
+            <Image url="@FinalFxml/img/userlogin.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="97.0" layoutY="126.0" prefHeight="64.0" prefWidth="300.0" spacing="16.0">
+         <children>
+            <ImageView fx:id="user" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FinalFxml/img/user.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtuser" prefHeight="64.0" prefWidth="200.0" promptText="Name">
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="87.0" layoutY="192.0" prefHeight="64.0" prefWidth="300.0" spacing="16.0">
+         <children>
+            <ImageView fx:id="lock" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FinalFxml/img/lock.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="9.0" />
+               </HBox.margin>
+            </ImageView>
+            <PasswordField fx:id="txtpass" prefHeight="64.0" prefWidth="200.0" promptText="********">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </PasswordField>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="login" layoutX="224.0" layoutY="268.0" mnemonicParsing="false" text="Login" textFill="#874356">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="newAccount" layoutX="195.0" layoutY="310.0" text="Create new Account" textFill="#874356" underline="true">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
